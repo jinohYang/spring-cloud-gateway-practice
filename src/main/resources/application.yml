@@ -5,13 +5,18 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: example_route
-          uri: https://www.naver.com/
+        - id: vsl_service
+          uri: https://openapi.its.go.kr:9443
           predicates:
-            - Path=/get
+            - Path=/vslInfo
           filters:
-            - name: AddKakaoOpenApiKeyFilter
+            - name: AddVSLOpenApiFilter
             - name: LoggingFilter
 
   main:
     web-application-type: reactive
+
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
