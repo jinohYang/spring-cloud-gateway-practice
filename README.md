@@ -12,7 +12,6 @@
 - [Configuration](#configuration)
     - [application.yml](#applicationyml)
     - [Route Configuration](#route-configuration)
-- [Running the Application](#running-the-application)
 
 ## Introduction
 
@@ -33,7 +32,7 @@ ITS 국가교통정보센터의 가변형 속도제한표지정보(VSL) Open API
 
 ### Prerequisites
 
-- Java 17
+- Java 21
 - Maven
 - Spring Boot
 
@@ -97,9 +96,4 @@ vslOpenApi:
 ```
 api-key는 https://www.its.go.kr/opendata/opendataList?service=vsl 에서 신청하여 발급 받을 수 있습니다.
 
-
-## Running the Application
-
-애플리케이션을 실행하려면 다음 명령을 사용하세요.:
-./mvnw spring-boot:run
 
